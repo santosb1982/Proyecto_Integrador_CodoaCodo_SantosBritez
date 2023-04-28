@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+   
+    
+
+header{
+    position: fixed;
+    background-color: #353A40;
+    display:flex;
+    width: 100%;
+    justify-content:space-between;
+    z-index: 1;
+
+}
+
+header img{
+    height: 75px;
+    vertical-align: middle;
+}
+header h2{
+    color:white;
+    display:inline-block;
+}
+
+nav{
+    display:inline-block;
+    float:right;
+    padding: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding:5px;
+}
+.comp-ticket{
+    color:lightgreen
+}
+
+/*Estilos aplicado al cuerpo*/
+
+body{
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+.contenido-confgral{
+
+    background-color: rgb(61, 60, 60);
+    
+    color:white;
+    display:flex;
+    justify-content:end;
+    align-items: center;
+    
+}
+
+.contenedor-conf{
+    text-align: right;
+    width: 50%;
+    margin-right: 80px;
+    
+}
+
+.contenido-confgral img{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    opacity: 0.5;
+}
+
+
+.parrafo-presentacion p{
+    text-align: right;
+    top:50%;*
+}
+
+#btn-orador{
+    border: 1px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding:10px;
+     
+}
+
+#btn-orador:hover{
+background-color: white;
+color:#353A40
+}
+
+.contenido-confgral a{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#btn-comp-ticket{
+    border: 1px solid  rgb(50, 119, 50);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    padding:10px;
+    background-color: rgb(50, 119, 50);
+}
+
+#btn-comp-ticket:hover{
+   filter: brightness(50%);
+    }
+
+
+.contenedor-conf{
+    position: absolute;
+    top:50%
+
+}
+
+.honolulu{
+    display:flex;
+    width: 100%;
+    margin-top:15px;
+}
+
+.honolulu a{
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius:4px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+.honolulu img{
+    width: 50%;
+}
+
+.honolulu a:hover{
+    background-color: #fff;
+    color: gray;
+    
+}
+
+.text-honolulu{
+    
+    background-color: dimgrey;
+    color:white;
+
+    
+    
+    
+    
+}
+
+.honolulu h2{
+    margin-top:15px;
+    margin-left:15px;
+    margin-bottom: 15px;
+}
+.honolulu p{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.oradores{
+    margin:auto;
+    width: 100%;
+    display:flex;
+    max-width: 1100px;
+}
+
+.conoce-oradores {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+   
+
+}
+
+
+.card{
+    width: 100%;
+    height: 600px;
+    margin:20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+   
+
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform:translateY(-2%)
+}
+
+.card .steve-jobs{
+    padding: 15px;
+}
+
+.card .bill-gates{
+    padding: 15px;
+}
+
+.card .ada-lovelace{
+    padding: 15px;
+}
+.card h3{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.oradores a{
+    text-decoration: none;
+
+    
+}
+
+.btn-javas{
+border: 1px solid #ffc107;
+    border-radius: 10px;
+    padding:3px;
+    background-color:#ffc107;
+    color:black;
+}
+.btn-reacts{
+    border: 1px solid #0dcaf0;
+        border-radius: 10px;
+        padding: 3px;
+        background-color: #0dcaf0;
+        color:black
+    }
+
+    .btn-negocios{
+        border: 1px solid #6c757d;
+            border-radius: 10px;
+            padding:3px;
+            background-color:#6c757d;
+            color:#fff
+        }
+    .btn-startups{
+            border: 1px solid #dc3545;
+                border-radius: 10px;
+                padding:3px;
+                background-color:#dc3545;
+                color:#fff
+            }
+    .card img{
+        width: 100%;
+    }
+
+    .formulario-orador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        min-width: 300px;
+        margin:auto;
+        margin-top: 15px;
+       
+        padding: 45px;
+
+    }
+
+    .formulario-orador> h3,h4 {
+        text-transform: uppercase;
+    }
+
+    #nombre, #apellido{
+        width: 49.7%;
+        height: 45px;
+        padding: 10px;
+        border: 1px solid #6c757d;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #nombre:focus, #apellido:focus, #tema-hablar:focus{
+       outline: 1px solid rgb(98, 167, 247);
+       box-shadow: 3px 3px 10px rgb(77, 159, 252);
+        
+        
+    }
+
+    #tema-hablar{
+        width: 100%;
+        
+    }
+
+        .formulario-orador label{
+        margin-bottom: 15px;
+    }
+
+    .enviar{
+        width: 100%;
+        height: 45px;
+        margin-top:15px;
+        background-color: #98CA50;
+        border-color: #98CA50;
+        color: #fff;
+        cursor:pointer;
+    }
+
+    footer{
+        
+        width: 100%;
+        height: 55px;
+    }
+    footer nav{
+        display:flex;
+        width: 100%;
+        justify-content:space-around;
+        align-items: center;
+        background: linear-gradient(to right, #384d4d, #3e6ead);  
+    }
+
+    nav>a{
+        text-decoration: none;
+        color:#969393
+    }
+    nav>a:hover{
+        color:#fff;
+    }
