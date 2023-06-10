@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+    <link rel="stylesheet" href="./css/compratyle.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+        <img src="./assets/images/codoacodo.png" alt="Logo de la Conf Bs As" loading="lazy">
+        <h2>Conf Bs As</h2>
+    </div>
+       <nav> <a href="./index.html">La Conferencia</a>
+        <a href="#">Los Oradores</a>
+        <a href="#">El Lugar</a>
+         <a href="#">Conviértete en orador</a>
+         <a class="comp-ticket" href="#">Comprar Ticket</a>
+        </nav>
+    </header>
+<main>
+    <div class="contenedor">
+        <div class="tarjeta-promo" id="estudiante">
+            <h5>Estudiante</h5>
+            <p>Tienen un descuento</p>
+            <p>
+                <strong>80%</strong>
+            </p>
+            <h6>*presentar documentación</h6>
+        </div>
+            <div class="tarjeta-promo" id="trainee">
+                <h5>Trainee</h5>
+                <p>Tienen un descuento</p>
+                <p><strong>50%</strong></p>
+                <h6>*presentar documentación</h6>
+            </div>
+        <div class="tarjeta-promo" id="junior">
+            <h5>Junior</h5>
+            <p>Tienen un descuento</p>
+            <p><strong>15%</strong></p>
+            <h6>*presentar documentación</h6>
+        </div>
+    </div>
+        <div class="texto-info">
+            <span class="span-venta">VENTA</span>
+            <h1>VALOR DE TICKET $200</h1>
+        </div>
+
+        <div class="form">
+        
+     <!--<form action="" class="form">--> 
+
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <div class="gpo-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+
+                    <input type="number" name="cantidad" id="cantidad" required>
+                </div>
+                <div class="gpo-categoria">
+                    <label for="categoria" class="lbl-categoria">Categoria:</label>
+                    <select class="categoria-select" name="categoria" id="categoria">
+                    <option>Normal</option>
+                    <option>Estudiante</option>
+                    <option>Trainee</option>
+                    <option>Junior</option>
+                    </select>
+                </div>
+                <div id="resultado">Total a pagar $</div>
+                <input type="button" id="borrar" value="Borrar" onclick="">
+                <input type="button" id="calcular" value="Resúmen" onclick="calculoTicket()">
+        </div>   
+    <!--</form>-->
+    </div>
+</main>
+    <footer>
+        <nav>
+            <a href="#">Preguntas <br>frecuentes</a>
+            <a href="#">Contactos</a>
+            <a href="#">Prensa</a>
+             <a href="#">Conferencias</a>
+             <a href="#">Términos y <br>condiciones</a>
+             <a href="#">Privacidad</a>
+             <a href="#">Estudiantes</a> 
+        </nav>
+    </footer> 
+
+    <script src="./scripts/calculo.js"></script>
+
+</body>
+</html>

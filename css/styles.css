@@ -31,7 +31,7 @@ header h2{
 
 nav{
     display:inline-block;
-    float:right;
+   
     padding: 25px;
 }
 
@@ -81,7 +81,7 @@ body{
 
 .parrafo-presentacion p{
     text-align: right;
-    top:50%;*
+    top:50%;
 }
 
 #btn-orador{

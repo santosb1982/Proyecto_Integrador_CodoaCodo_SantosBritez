@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+    
+
+header{
+    position: fixed;
+    background-color: #353A40;
+    display:flex;
+    width: 100%;
+    justify-content:space-between;
+    top:0;
+    z-index: 1;
+   
+}
+
+header img{
+    height: 75px;
+    vertical-align: middle;
+}
+header h2{
+    color:white;
+    display:inline-block;
+}
+
+nav{
+    display:inline-block;
+   
+    padding: 25px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding:5px;
+}
+.comp-ticket{
+    color:lightgreen
+}
+
+body{
+   
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor{
+    
+    display:flex;
+    justify-content: space-around; 
+    margin:auto;
+   
+}
+.tarjeta-promo{
+    margin-top: 100px;
+    width: 250px;
+    height:200px;
+    border: 1px solid;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+#estudiante{
+    
+   text-align: center;
+    padding: 25px;
+    border-color: #0d6efd;
+}
+#trainee{
+    
+    text-align: center;
+    padding: 25px;
+    border-color: #20c997;
+}
+#junior{
+    text-align: center;
+    padding: 25px;
+    border-color: #ffc107;
+}
+
+.tarjeta-promo h5, .tarjeta-promo p{
+margin-bottom: 5px;
+}
+
+.texto-info{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-top:25px;
+    margin-bottom: 5px;
+    
+}
+
+/*.formulario-compra{
+             
+
+}*/
+
+.form{
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+    min-width: 300px;
+   
+    margin-top: 0px;
+    padding: 45px;
+}
+
+
+#nombre, #apellido{
+  
+    width: 49.7%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #6c757d;
+    border-radius: 6px;;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}  
+
+.gpo-cantidad, .gpo-categoria{
+    display: inline-block;
+    width: 49.7%;
+    align-items: center;
+    align-content: center;
+   justify-content:space-between;
+}
+
+#cantidad,  #categoria{
+    
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #6c757d;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+#email{
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #6c757d;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+#nombre:focus, #apellido:focus, #cantidad:focus,  #categoria:focus, #email:focus{
+    outline: 1px solid rgb(98, 167, 247);
+    box-shadow: 3px 3px 10px rgb(77, 159, 252);
+}
+
+#resultado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-weight: 400;
+    font-size: large;
+    padding:15px;
+    background-color: #CFE2FF;
+    border: 1px solid#0d6efd;
+    border-radius: 6px; 
+    color:#0d6efd;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    
+}
+
+#calcular, #borrar{
+    align-items: center;
+    align-content: center;
+    display:inline-block;
+    width: 49.7%;
+    height: 45px;
+    margin-top:15px;
+    background-color: #98CA50;
+    border-color: #98CA50;
+    color: #fff;
+    cursor:pointer;
+    margin-bottom: 15px;
+}
+
+#calcular:hover, #borrar:hover{
+    filter: brightness(50%); 
+}
+
+footer{
+        
+    width: 100%;
+    height: 55px;
+}
+footer nav{
+    display:flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    background: linear-gradient(to right, #384d4d, #3e6ead);  
+}
+
+nav>a{
+    text-decoration: none;
+    color:#969393
+}
+nav>a:hover{
+    color:#fff;
+}
